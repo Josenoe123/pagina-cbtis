@@ -6,6 +6,68 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+    </style>
+     <header>
+        <h1>Bienvenido a Mi Página Bonita</h1>
+    </header>
     <h2>¿Que es la programacion copetitiva?</h2>
     <p>
         La programación competitiva es una disciplina en la que los programadores resuelven problemas algorítmicos en un tiempo limitado, a menudo en un entorno de competencia. En estas competiciones, los participantes deben escribir código para resolver una serie de problemas de lógica, matemáticas y algoritmos, generalmente usando lenguajes como C++, Java o Python.
@@ -29,5 +91,22 @@ Kaggle Competitions: Aunque se centra más en el análisis de datos y machine le
 Topcoder: Una de las plataformas más antiguas para competencias de programación, que organiza desafíos y maratones de codificación.
 
     </p>
+   
+    <main>
+        <section class="gallery">
+            <div class="image-container">
+                <img src="img1.png" alt="Descripción de la imagen 1">
+            </div>
+            <div class="image-container">
+                <img src="img2.jpg" alt="Descripción de la imagen 2">
+            </div>
+            <div class="image-container">
+                <img src="img3.jpg" alt="Descripción de la imagen 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Mi Página Bonita. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
