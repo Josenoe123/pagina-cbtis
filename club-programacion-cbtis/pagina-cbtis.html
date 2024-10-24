@@ -63,11 +63,67 @@ footer {
     border-radius: 8px;
     margin-top: 20px;
 }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    gap: 20px;
+    position: relative; /* Para posicionar el submenu */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul .submenu {
+    display: none; /* Oculta el submenu por defecto */
+    position: absolute; /* Posiciona el submenu */
+    top: 100%; /* Se despliega justo debajo del enlace padre */
+    left: 0;
+    background-color: #7dcea0;
+    border-radius: 5px;
+    padding: 10px 0; /* Espaciado interno */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+nav li:hover .submenu {
+    display: block; /* Muestra el submenu al pasar el mouse */
+}
+
+nav a:hover {
+    background-color: #e9ecef;
+    color: #333;
+}
+
 
     </style>
      <header>
         <h1>Bienvenido a Mi Página Bonita</h1>
     </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#inicio">Inicio</a>
+                <ul class="submenu">
+                    <li><a href="#servicio1">ICPC</a></li>
+                    <li><a href="#servicio2">Coding CUP</a></li>
+                    <li><a href="#servicio3">COPA comunidades</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#servicios">Servicios</a>
+            </li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
     <h2>¿Que es la programacion copetitiva?</h2>
     <p>
         La programación competitiva es una disciplina en la que los programadores resuelven problemas algorítmicos en un tiempo limitado, a menudo en un entorno de competencia. En estas competiciones, los participantes deben escribir código para resolver una serie de problemas de lógica, matemáticas y algoritmos, generalmente usando lenguajes como C++, Java o Python.
